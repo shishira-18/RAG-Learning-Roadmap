@@ -17,7 +17,7 @@ This document provides a quick overview of **Large Language Models (LLMs)**, sta
 
 ## 💻 What are LLMs?
 
-LLMs are a specific type of foundation model focused on language. They are trained on a truly **vast corpus of text data**—from books and articles to conversations—often running into **petabytes** of information.
+LLMs are a specific type of foundation model focused on language. They are trained on a truly **vast corpus of text data** from books and articles to conversations often running into **petabytes** of information.
 
 LLM training typically happens in distinct phases:
 
@@ -74,22 +74,21 @@ LLMs are trained on fixed datasets, giving them a **specific knowledge cut-off d
 ---
 
 ## 3. ⚠️ Ethical Risks
+
 ### Ethical and Societal Risks
 
-| **Challenge**                                                                                                                     | **Description**                                                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Inherent Bias**                                                                                                                 | LLMs can perpetuate and amplify existing societal biases (gender, race, ethnicity, etc.) because these biases are**present in their massive training data**. This leads to unfair or discriminatory outputs.   |
-| **Lack of Transparency**                                                                                                          | It's incredibly difficult to trace**why** an LLM produced a specific output (the "Black Box" problem). This makes it hard to identify the root source of bias or error and lowers user trust.                  |
-| **Violation of Privacy**                                                                                                          | Due to the massive scale of training data (often scraped from the public web), LLMs might inadvertently**memorize and output confidential or personal information** (like names, addresses, or phone numbers). |
-                                                                                                                                                                                                                     |
-
----
+| **Challenge**            | **Description**                                                                                                                                                                                                |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Inherent Bias**        | LLMs can perpetuate and amplify existing societal biases (gender, race, ethnicity, etc.) because these biases are**present in their massive training data**. This leads to unfair or discriminatory outputs.   |
+| **Lack of Transparency** | It's incredibly difficult to trace**why** an LLM produced a specific output (the "Black Box" problem). This makes it hard to identify the root source of bias or error and lowers user trust.                  |
+| **Violation of Privacy** | Due to the massive scale of training data (often scraped from the public web), LLMs might inadvertently**memorize and output confidential or personal information** (like names, addresses, or phone numbers). |
+|                                |                                                                                                                                                                                                                      |
 
 # 🔍 Retrieval Augmented Generation (RAG)
 
-**RAG (Retrieval Augmented Generation)** is a method designed to overcome the core limitation of LLMs: their static **knowledge cut-off date**.1
+**RAG (Retrieval Augmented Generation)** is a method designed to overcome the core limitation of LLMs: their static **knowledge cut-off date**.
 
-RAG enhances the LLM's capability by allowing it to access and utilize up-to-date, external knowledge before generating a response.2
+RAG enhances the LLM's capability by allowing it to access and utilize up-to-date, external knowledge before generating a response.
 
 ## How RAG Works
 
@@ -107,27 +106,25 @@ Essentially, the LLM "talks" to an external database to get up-to-date, contextu
 
 | **Benefit**                  | **Description**                                                                                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Avoids Stale Information** | LLMs can access and incorporate the**latest information** by querying updated external databases, bypassing the LLM's knowledge cut-off.                |
+| **Avoids Stale Information** | LLMs can access and incorporate the **latest information** by querying updated external databases, bypassing the LLM's knowledge cut-off.              |
 | **Customization**            | Allows for the inclusion of**domain-specific, proprietary, or private knowledge**, enabling tailored responses for a specific organization or use case. |
 | **Attribution/Traceability** | Generated text can often be**linked directly back to its source** in the external database, increasing user trust and making fact-checking easier.      |
 | **Control**                  | Provides more**control** over the type and amount of information the model is allowed to output, helping to mitigate certain types of hallucinations.   |
-
----
 
 ## Common External Sources for RAGs
 
 RAG systems are flexible and can be connected to various external data sources:
 
-- **Document-Based Sources:** Books, articles, research papers, and specialized databases.7
-- **Structured Data:** Database entries, tables, and other structured sources.8
-- **Knowledge Graphs:** Proprietary graphs that map out complex semantic relationships.9
+- **Document-Based Sources:** Books, articles, research papers, and specialized databases.
+- **Structured Data:** Database entries, tables, and other structured sources.
+- **Knowledge Graphs:** Proprietary graphs that map out complex semantic relationships.
 - **Mixed Media Sources:** Any combination of text, images, or other data formats.
 
 # 🛠️ Understanding a Simple RAG System (First Steps)
 
 A Retrieval Augmented Generation (RAG) system has several distinct stages that link the LLM to a source of external knowledge.
 
-![[Pasted image 20251024230250.png]]
+![Alt text](images/simple-rag.png "simple RAG")
 
 ## 1. Encoding and Vector Embeddings: The Knowledge Base
 
