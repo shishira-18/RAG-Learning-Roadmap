@@ -1,6 +1,6 @@
 # Introduction to LLM and RAG
 
-![images/Understanding_llm.png]]
+![Alt text](images/Understanding_llm.png)
 
 # Understanding Large Language Models (LLMs)
 
@@ -73,18 +73,7 @@ LLMs are trained on fixed datasets, giving them a **specific knowledge cut-off d
 
 ---
 
-## 3. ⚠️ Types of Hallucinations & Ethical Risks
-
-While "Hallucination" is a general term for generating incorrect output, it breaks down into specific types of errors, alongside critical ethical challenges.
-
-### Generation Error Classifications
-
-| **Error Type**              | **Description**                                                                                                                        |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Factual Hallucinations**  | Giving outright**incorrect facts or details**. (e.g., citing a non-existent source or providing a wrong date).                         |
-| **Semantic Hallucinations** | Producing sections of text that are nonsensical, logically incoherent, or a**stream of meaningless words** within the context.         |
-| **Confabulation**           | The model attempts to fill in**narrative gaps** or explain its own answers with plausible-sounding (but possibly incorrect) reasoning. |
-
+## 3. ⚠️ Ethical Risks
 ### Ethical and Societal Risks
 
 | **Challenge**                                                                                                                     | **Description**                                                                                                                                                                                                |
@@ -92,7 +81,7 @@ While "Hallucination" is a general term for generating incorrect output, it brea
 | **Inherent Bias**                                                                                                                 | LLMs can perpetuate and amplify existing societal biases (gender, race, ethnicity, etc.) because these biases are**present in their massive training data**. This leads to unfair or discriminatory outputs.   |
 | **Lack of Transparency**                                                                                                          | It's incredibly difficult to trace**why** an LLM produced a specific output (the "Black Box" problem). This makes it hard to identify the root source of bias or error and lowers user trust.                  |
 | **Violation of Privacy**                                                                                                          | Due to the massive scale of training data (often scraped from the public web), LLMs might inadvertently**memorize and output confidential or personal information** (like names, addresses, or phone numbers). |
-| That's an excellent breakdown of Retrieval Augmented Generation (RAG). Here is the content formatted for easy reading in a GitHub note. |                                                                                                                                                                                                                      |
+                                                                                                                                                                                                                     |
 
 ---
 
