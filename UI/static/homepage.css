@@ -11,6 +11,32 @@
     padding: 20px;
 }
 
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #f7f8ff 0%, #eef2ff 100%);
+    border-radius: 12px;
+    padding: 40px 20px;
+    margin: 10px 0 30px 0;
+    box-shadow: 0 8px 30px rgba(102, 126, 234, 0.06);
+}
+.hero .hero-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    margin: 0 0 8px 0;
+    color: #1f2937;
+}
+.hero .lead {
+    font-family: 'Inter', sans-serif;
+    color: #475569;
+    font-size: 17px;
+    margin-top: 4px;
+}
+
 /* Hide Streamlit branding */
 #MainMenu {
     visibility: hidden;
@@ -146,6 +172,53 @@ header {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+
+/* Ensure consistent card heights and layout */
+.chapter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 220px; /* fixed, consistent height for all cards */
+    max-height: 220px;
+    overflow: hidden; /* hide extra content visually */
+    background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%); /* subtle unified surface */
+    border: 1px solid rgba(99,102,241,0.08);
+    position: relative;
+    padding: 20px; /* slightly reduced padding to fit content */
+}
+
+.chapter-card .chapter-number {
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    color: #fff !important;
+}
+
+.chapter-card .chapter-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* clamp title to 2 lines */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chapter-card .chapter-description {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* show max 4 lines then ellipsis */
+    line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chapter-card .chapter-title {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .chapter-meta {
@@ -298,5 +371,32 @@ header {
 
     .main {
         padding: 10px;
+    }
+}
+
+/* Small helpers for card layout */
+.chapter-card .chapter-number {
+    font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 34px; }
+    .chapter-title { font-size: 20px; }
+}
+
+/* Mobile: slightly smaller fixed card height so layout remains consistent */
+@media (max-width: 768px) {
+    .chapter-card {
+        height: 180px;
+        max-height: 180px;
+        padding: 16px;
+    }
+    .chapter-card .chapter-description {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    }
+    .chapter-card .chapter-title {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     }
 }

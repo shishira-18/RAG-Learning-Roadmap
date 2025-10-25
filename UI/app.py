@@ -25,7 +25,7 @@ if 'selected_project' not in st.session_state:
 
 # Main content area
 if st.session_state.current_view == 'home':
-    # Home page - Chapter selection
+    # Home page
     render_homepage_view()
 
 elif st.session_state.current_view == 'chapter':
