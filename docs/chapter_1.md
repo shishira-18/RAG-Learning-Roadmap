@@ -106,7 +106,7 @@ Essentially, the LLM "talks" to an external database to get up-to-date, contextu
 
 | **Benefit**                  | **Description**                                                                                                                                         |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Avoids Stale Information** | LLMs can access and incorporate the **latest information** by querying updated external databases, bypassing the LLM's knowledge cut-off.              |
+| **Avoids Stale Information** | LLMs can access and incorporate the**latest information** by querying updated external databases, bypassing the LLM's knowledge cut-off.                |
 | **Customization**            | Allows for the inclusion of**domain-specific, proprietary, or private knowledge**, enabling tailored responses for a specific organization or use case. |
 | **Attribution/Traceability** | Generated text can often be**linked directly back to its source** in the external database, increasing user trust and making fact-checking easier.      |
 | **Control**                  | Provides more**control** over the type and amount of information the model is allowed to output, helping to mitigate certain types of hallucinations.   |
@@ -124,7 +124,7 @@ RAG systems are flexible and can be connected to various external data sources:
 
 A Retrieval Augmented Generation (RAG) system has several distinct stages that link the LLM to a source of external knowledge.
 
-![Alt text](images/simple-rag.png "simple RAG")
+![Alt text](images/simple-rag.png)
 
 ## 1. Encoding and Vector Embeddings: The Knowledge Base
 

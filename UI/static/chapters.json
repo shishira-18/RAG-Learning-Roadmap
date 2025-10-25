@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "number": "Chapter 01",
+        "title": "Introduction to LLM and RAG",
+        "description": "This document provides a quick overview of Large Language Models (LLMs), starting with the foundational concept that makes them possible",
+        "file": "chapter_1.md",
+        "projects": [
+            {
+                "id": "p1",
+                "title": "Build Your First RAG System",
+                "description": "Create a simple Q&A system using OpenAI and ChromaDB",
+                "difficulty": "Beginner",
+                "time": "2 hours"
+            },
+            {
+                "id": "p2",
+                "title": "Document Chat Application",
+                "description": "Build an interactive chat interface for PDF documents",
+                "difficulty": "Intermediate",
+                "time": "3 hours"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "number": "Chapter 02",
+        "title": "Data Retrieval Techniques",
+        "description": "Deep dive into advanced retrieval methods, vector databases, and optimization strategies for production systems.",
+        "file": "chapter_2.md",
+        "topics": ["Vector Databases", "Hybrid Search", "Query Optimization", "Chunking Strategies"],
+        "projects": [
+            {
+                "id": "p3",
+                "title": "Multi-Modal Search Engine",
+                "description": "Implement search across text, images, and structured data",
+                "difficulty": "Advanced",
+                "time": "4 hours"
+            },
+            {
+                "id": "p4",
+                "title": "Semantic Cache System",
+                "description": "Build an intelligent caching layer for LLM responses",
+                "difficulty": "Intermediate",
+                "time": "2.5 hours"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "number": "Chapter 03",
+        "title": "Fine-Tuning LLMs for RAG",
+        "description": "Learn advanced techniques for adapting language models to your specific domain and use cases.",
+        "file": "chapter_3.md",
+        "topics": ["PEFT Methods", "LoRA", "QLoRA", "Training Strategies"],
+        "projects": [
+            {
+                "id": "p5",
+                "title": "Domain-Specific LLM Fine-Tuning",
+                "description": "Fine-tune Llama 2 for medical document analysis",
+                "difficulty": "Expert",
+                "time": "6 hours"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "number": "Chapter 04",
+        "title": "Advanced RAG Applications",
+        "description": "Build production-ready applications with advanced patterns, evaluation metrics, and deployment strategies.",
+        "file": "chapter_4.md",
+        "topics": ["Production Deployment", "Evaluation Metrics", "Multi-Agent RAG", "Streaming"],
+        "projects": [
+            {
+                "id": "p6",
+                "title": "Production RAG API",
+                "description": "Deploy a scalable RAG system with FastAPI and Kubernetes",
+                "difficulty": "Expert",
+                "time": "8 hours"
+            },
+            {
+                "id": "p7",
+                "title": "RAG Evaluation Framework",
+                "description": "Build comprehensive testing and evaluation pipeline",
+                "difficulty": "Advanced",
+                "time": "5 hours"
+            }
+        ]
+    }
+]
