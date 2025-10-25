@@ -13,9 +13,10 @@ def render_project_card(project, chapter_id):
             # We add a class to the button container for vertical centering in CSS
             st.markdown('<div class="button-aligner">', unsafe_allow_html=True)
             if st.button("Open", type="primary", key=f"proj_{project['id']}"):
+                # Open should go directly to chat-only view
                 st.session_state.selected_project = project
                 st.session_state.selected_chapter = chapter_id
-                st.session_state.current_view = 'project'
+                st.session_state.current_view = 'project_chat'
                 st.rerun()
             st.markdown('</div>', unsafe_allow_html=True)
 

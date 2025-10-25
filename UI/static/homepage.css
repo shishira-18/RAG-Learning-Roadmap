@@ -400,3 +400,94 @@ header {
     line-clamp: 2;
     }
 }
+
+/* Chat UI styles */
+.chat-container {
+    max-width: 900px;
+    margin: 12px auto 30px auto;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 12px;
+    border: 1px solid rgba(99,102,241,0.06);
+    padding: 14px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
+}
+.chat-window {
+    height: 420px;
+    max-height: 420px;
+    overflow: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(250,250,255,0.9));
+    border-radius: 8px;
+}
+.message {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.message.user { justify-content: flex-end; }
+.message.user .bubble {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    margin-left: 36px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.message.bot .bubble {
+    background: #f1f5f9;
+    color: #0f172a;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.bubble {
+    padding: 12px 14px;
+    max-width: 78%;
+    line-height: 1.45;
+    font-size: 15px;
+    box-shadow: 0 4px 14px rgba(2,6,23,0.04);
+}
+.chat-controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+    align-items: center;
+}
+.chat-input {
+    flex: 1 1 auto;
+}
+.btn-send {
+    background: linear-gradient(135deg, #10b981, #06b6d4);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+}
+.btn-clear {
+    background: transparent;
+    color: #475569;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(15,23,42,0.06);
+}
+
+/* small screens adjustments */
+@media (max-width: 768px) {
+    .chat-window { height: 340px; max-height: 340px; }
+    .bubble { max-width: 86%; font-size: 14px; }
+}
